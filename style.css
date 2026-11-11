@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+:root {
+  --paper: #F4F1EA;
+  --ink: #161513;
+  --ink-soft: #57534B;
+  --rule: #D9D3C7;
+  --accent: #D9481A;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  padding: 32px 16px 64px;
+}
+main { max-width: 680px; margin: 0 auto; }
+h1, .brand, .hero { font-family: "Anton", Impact, sans-serif; font-weight: 400; letter-spacing: 0.5px; }
+h1 { font-size: 40px; line-height: 1.1; margin: 8px 0 4px; }
+.hero { font-size: 56px; margin-top: 15vh; }
+.hero span { color: var(--accent); }
+.lead { font-size: 20px; }
+.brand { font-size: 18px; margin: 0; }
+.brand a { text-decoration: none; color: var(--accent); }
+h2 { font-size: 20px; margin: 32px 0 6px; border-top: 2px solid var(--ink); padding-top: 12px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 22px; }
+a { color: var(--ink); text-underline-offset: 3px; }
+.muted { color: var(--ink-soft); font-size: 15px; }
