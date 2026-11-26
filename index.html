@@ -3,15 +3,172 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Myth / Truth</title>
+<title>Myth / Truth: the daily myth or truth game</title>
+<meta name="description" content="A daily game about knowing what you know. Ten claims a day: call each one myth or truth, say how sure you are, then see the answer and its source. Free, in your browser or on iPhone.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Myth / Truth">
+<meta property="og:title" content="Myth / Truth: spot the myth, back your call">
+<meta property="og:description" content="Ten claims a day. Call each one myth or truth, say how sure you are, then see the answer and its source.">
+<meta property="og:image" content="https://intellismart-group.github.io/myth-truth-site/images/share.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://intellismart-group.github.io/myth-truth-site/">
+<meta property="og:url" content="https://intellismart-group.github.io/myth-truth-site/">
 </head>
 <body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="wordmark" href="./">MYTH <span>/</span> TRUTH</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-small" href="#how">How to play</a>
+      <a class="hide-small" href="https://apps.apple.com/us/app/myth-truth/id6832107554">iPhone app</a>
+      <a class="btn btn-play" href="play/">Play now</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<h1 class="hero">MYTH <span>/</span> TRUTH</h1>
-<p class="lead">A daily game about knowing what you know. Ten claims a day: decide myth or truth, say how sure you are, and see the sources.</p>
-<p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
-<p class="muted">© 2026 Intellismart Global Staffing LLC</p>
+  <section class="wrap hero">
+    <div>
+      <h1>Spot the myth.<br><span>Back your call.</span></h1>
+      <p class="lead">A daily game about knowing what you know. Ten claims a day: call each one myth or truth, say how sure you are, then see the answer and its source.</p>
+      <div class="actions">
+        <a class="btn btn-play" href="play/">Play in your browser</a>
+        <a class="btn" href="https://apps.apple.com/us/app/myth-truth/id6832107554">Get the iPhone app</a>
+      </div>
+      <p class="fine">Free. No ads. No sign-up. For adults 18 and over.</p>
+    </div>
+
+    <div class="sample" id="sample">
+      <p class="label">Try one from Daily #001</p>
+      <p class="claim">Camels store water in their humps</p>
+      <div class="choice" role="group" aria-label="Myth or truth?">
+        <button type="button" data-choice="MYTH" aria-pressed="false">MYTH</button>
+        <button type="button" data-choice="TRUTH" aria-pressed="false">TRUTH</button>
+      </div>
+      <div class="sure" hidden>
+        <p>How sure are you?</p>
+        <div class="row">
+          <button type="button" data-sure="Not Sure">Not Sure</button>
+          <button type="button" data-sure="Pretty Sure">Pretty Sure</button>
+          <button type="button" data-sure="Certain">Certain</button>
+        </div>
+      </div>
+      <div class="reveal" hidden aria-live="polite">
+        <p class="verdict">MYTH</p>
+        <p class="result"></p>
+        <p>A camel's hump holds fat, not water. The fat is an energy reserve for times when food is scarce.</p>
+        <p class="source">Source: <a href="https://ielc.libguides.com/sdzg/factsheets/extantcamels/characteristics">San Diego Zoo Wildlife Alliance Library, Camels Fact Sheet</a>: "Not used for water storage."</p>
+        <p class="next">That's one. Today's Daily has ten. <a href="play/">Play it now</a></p>
+        <button type="button" class="again">Try this one again</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <div class="wrap">
+      <h2>How to play</h2>
+      <div class="cols">
+        <div>
+          <h3>Call it</h3>
+          <p>Read a short claim and decide: myth or truth?</p>
+        </div>
+        <div>
+          <h3>Back your call</h3>
+          <p>Say how sure you are: Not Sure, Pretty Sure or Certain. Being sure and being right aren't the same thing.</p>
+        </div>
+        <div>
+          <h3>See the source</h3>
+          <p>Every answer comes with a short explanation and the source it's checked against, so you can read more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>A new Daily every day</h2>
+      <div class="cols">
+        <div>
+          <h3>The Daily</h3>
+          <p>The same ten claims for everyone, out every day. Finish it to earn a bonus and keep your streak going.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p>Catch up on Dailies you missed, get a second chance at the ones you got wrong, and play by category: <span class="cats">Health, Food, Money, Sports, Geography, Words, History, Science, Space and Nature.</span></p>
+        </div>
+        <div>
+          <h3>Your report and your friends</h3>
+          <p>Once you've answered enough, your knowledge report shows how often you're right at each level of confidence. Send a friend a Daily you finished, then compare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap split">
+      <div>
+        <h2>Play here or on your iPhone</h2>
+        <p>Play right here in your browser, on any computer or phone, or get the free iPhone app from the App Store. You play as a guest either way: no name, no email, no password.</p>
+        <p class="muted">Your progress stays where you play. The website and the iPhone app each keep their own points and streak.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-play" href="play/">Play in your browser</a>
+        <a class="btn" href="https://apps.apple.com/us/app/myth-truth/id6832107554">Get the iPhone app</a>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="bottom">
+  <div class="wrap">
+    <nav aria-label="Site">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
+    <span class="muted">© 2026 Intellismart Global Staffing LLC</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var box = document.getElementById('sample');
+  var picks = box.querySelectorAll('[data-choice]');
+  var sure = box.querySelector('.sure');
+  var reveal = box.querySelector('.reveal');
+  var result = box.querySelector('.result');
+  var choice = null;
+
+  picks.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!reveal.hidden) return;
+      choice = b.getAttribute('data-choice');
+      picks.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+      sure.hidden = false;
+    });
+  });
+  box.querySelectorAll('[data-sure]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!choice) return;
+      var right = choice === 'MYTH';
+      result.textContent = 'You said ' + choice + ', ' + b.getAttribute('data-sure') + '. ' + (right ? 'Right!' : 'Not this time.');
+      sure.hidden = true;
+      reveal.hidden = false;
+    });
+  });
+  box.querySelector('.again').addEventListener('click', function () {
+    choice = null;
+    picks.forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+    reveal.hidden = true;
+    sure.hidden = true;
+    picks[0].focus();
+  });
+})();
+</script>
 </body>
 </html>
