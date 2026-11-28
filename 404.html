@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script>if (location.pathname.indexOf("/myth-truth-site/play/") !== 0) location.replace("/myth-truth-site/");</script>
+    <script>if (location.pathname.indexOf("/myth-truth-site/play/") !== 0) { window.__siteVisitSkip = true; location.replace("/myth-truth-site/"); }</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Play Myth / Truth</title>
@@ -17,6 +17,8 @@
     <meta property="og:image" content="https://intellismart-group.github.io/myth-truth-site/images/share.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <style>html, body { background: #F4F1EA; }</style>
+    <script>try{window.__siteVisit={url:location.href,ref:document.referrer,seen:!!localStorage.getItem('sb-rcrhmyqyroejnajwuyxe-auth-token')}}catch(e){}</script>
+<script src="/myth-truth-site/visit.js" defer></script>
     <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
       /* These styles make the body full-height */
